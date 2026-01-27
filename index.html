@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobiclean | Premium Mobile Detailing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="carbon-bg">
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo">
+            <img src="images/logo.avif" alt="Mobiclean Logo">
+        </div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#diensten">Diensten</a>
+            <a href="#contact" class="btn-red-small">Afspraak</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">MOBI<span class="text-red">CLEAN</span></h1>
+            <p class="reveal subtitle">Premium Mobile Detailing</p>
+            <div class="hero-btns reveal">
+                <a href="#contact" class="btn-red">Plan uw detail</a>
+                <a href="#diensten" class="btn-outline">Ontdek diensten</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container grid">
+            <div class="feature-item reveal">
+                <i class="fas fa-shuttle-van"></i>
+                <h3>Op Locatie</h3>
+                <p>Wij komen naar u toe, thuis of op het werk.</p>
+            </div>
+            <div class="feature-item reveal">
+                <i class="fas fa-award"></i>
+                <h3>20+ Jaar</h3>
+                <p>Ervaring en passie voor elk type voertuig.</p>
+            </div>
+            <div class="feature-item reveal">
+                <i class="fas fa-gem"></i>
+                <h3>Premium</h3>
+                <p>Alleen de beste producten voor uw lak.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diensten" class="services-preview">
+        <div class="container">
+            <h2 class="section-title reveal">Onze <span class="text-red">Expertise</span></h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <h3>Interieur Detail</h3>
+                    <p>Dieptereiniging, lederbehandeling en geurverwijdering.</p>
+                </div>
+                <div class="service-card reveal">
+                    <h3>Exterieur Detail</h3>
+                    <p>Handwas, kleien en hoogwaardige waxbescherming.</p>
+                </div>
+                <div class="service-card reveal">
+                    <h3>Polijsten</h3>
+                    <p>Verwijderen van krassen en herstellen van glans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card reveal">
+                <h2>Klaar voor een <span class="text-red">Showroom</span> resultaat?</h2>
+                <p>Bel ons direct of stuur een bericht voor een vrijblijvende offerte.</p>
+                <div class="contact-info">
+                    <a href="tel:+32473256614" class="contact-link"><i class="fas fa-phone"></i> +32 473 25 66 14</a>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/32473256614" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Mobiclean. <span class="text-red">Driven by perfection.</span></p>
+</footer>
+
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+    });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
