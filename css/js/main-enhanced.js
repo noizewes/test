@@ -454,4 +454,3 @@ function throttle(func, limit) {
         }
     };
 }
-
