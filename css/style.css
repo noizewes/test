@@ -7,6 +7,7 @@
     --loblolly: #B8CAD1;
     --font-primary: 'Exo 2', sans-serif;
     --transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    
   }
   
   * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-primary); }
