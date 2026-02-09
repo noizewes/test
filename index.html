@@ -13,13 +13,13 @@
 <header class="header">
     <div class="container header-inner">
         <div class="logo">
-            <img src="assets/images/logo.avif" alt="Mobiclean Logo">
+            <img src="assets/images/logo.png" alt="Mobiclean Logo">
         </div>
         <nav class="nav">
             <a href="#home">Home</a>
-            <a href="#behandelingen">Behandelingen</a>
-            <a href="Gallery.html">Galerij</a>
-            <a href="#contact" class="btn-red-small">Contact</a>
+            <a href="#diensten">Diensten</a>
+            <a href="gallery.html">Galerij</a>
+            <a href="contact.html" class="btn-red-small">Contact</a>
         </nav>
     </div>
 </header>
@@ -32,8 +32,8 @@
             <p class="reveal subtitle">Mobile cleaning services</p>
             <p class="reveal hero-description">Geen tijd of zin om uw auto zelf te reinigen? Neem vrijblijvend contact op en ontdek onze uitgebreide diensten.</p>
             <div class="hero-btns reveal">
-                <a href="#contact" class="btn-red">Contact opnemen</a>
-                <a href="#behandelingen" class="btn-outline">Behandelingen</a>
+                <a href="contact.html" class="btn-red">Contact opnemen</a>
+                <a href="#diensten" class="btn-outline">Onze diensten</a>
             </div>
         </div>
         <div class="scroll-indicator"></div>
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    <section id="behandelingen" class="services-minimal">
+    <section id="diensten" class="services-minimal">
         <div class="container">
             <h2 class="section-title reveal">Perfectie & <span class="text-red">Ervaring</span></h2>
             <div class="intro-text reveal">
@@ -77,11 +77,49 @@
         </div>
     </section>
 
-    <section id="galerij" class="gallery-section">
+    <section id="galerij" class="gallery-preview">
         <div class="container">
             <h2 class="section-title reveal"><span class="text-red">Galerij</span></h2>
-            <p class="gallery-intro reveal">Benieuwd naar onze resultaten? Bekijk onze transformaties.</p>
-            <!-- Hier kunnen galerij afbeeldingen worden toegevoegd -->
+            <p class="gallery-intro reveal">Benieuwd naar onze resultaten? Bekijk de transformaties die wij realiseren.</p>
+            
+            <div class="preview-grid">
+                <div class="preview-item reveal" style="animation-delay: 0.1s">
+                    <div class="preview-image">
+                        <img src="assets\images\A4\a4-int-back.after.jpg" alt="Audi A4 Detail">
+                        <div class="preview-overlay">
+                            <span class="preview-label">Audi A4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-item reveal" style="animation-delay: 0.2s">
+                    <div class="preview-image">
+                        <img src="assets\images\520\520-After.jpg" alt="BMW Detail">
+                        <div class="preview-overlay">
+                            <span class="preview-label">BMW 520d Touring</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-item reveal" style="animation-delay: 0.3s">
+                    <div class="preview-image">
+                        <img src="assets\images\Trafic\Trafic-int.before.jpg" alt="Renault Trafic">
+                        <div class="preview-overlay">
+                            <span class="preview-label">Renault Trafic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-item reveal" style="animation-delay: 0.4s">
+                    <div class="preview-image">
+                        <img src="assets\images\Kangoo\Kangoo-driver.after.webp" alt="Renault Kangoo">
+                        <div class="preview-overlay">
+                            <span class="preview-label">Renault Kangoo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta-btn reveal">
+                <a href="gallery.html" class="btn-red">Bekijk volledige galerij</a>
+            </div>
         </div>
     </section>
 
@@ -89,7 +127,7 @@
         <div class="container">
             <div class="contact-card reveal">
                 <div class="contact-visual">
-                    <img src="assets/images/logo.avif" alt="Mobiclean Logo" class="contact-logo-img">
+                    <img src="assets/images/logo.png" alt="Mobiclean Logo" class="contact-logo-img">
                     <div class="glow-ring"></div>
                 </div>
                 <div class="contact-header">
@@ -103,7 +141,7 @@
                     </a>
                     <a href="tel:+32473256614" class="contact-method">
                         <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div class="method-text"><span>Wouter Dure</span><strong>0473 25 66 14</strong></div>
+                        <div class="method-text"><span>Wouter Dure</span><strong>+32 473 25 66 14</strong></div>
                     </a>
                 </div>
                <!-- <div class="social-links reveal">
@@ -124,14 +162,14 @@
             <h4>Het bedrijf</h4>
             <ul>
                 <li><a href="#home">Over ons</a></li>
-                <li><a href="#behandelingen">Behandelingen</a></li>
-                <li><a href="Gallery.html">Galerij</a></li>
+                <li><a href="#diensten">Diensten</a></li>
+                <li><a href="gallery.html">Galerij</a></li>
             </ul>
         </div>
-        <div class="footer-section">
-          <!--  <h4>Contact</h4>
-            <p>Wouter Dure<br>0473 25 66 14</p> -->
-        </div>
+       <!-- <div class="footer-section">
+             <h4>Contact</h4>
+            <p>Wouter Dure<br>0473 25 66 14</p> 
+        </div>-->
         <div class="footer-bottom">
             <p><a href="terms.html">Algemene voorwaarden</a></p>
             <p>&copy; 2026 By Mobiclean</p>
@@ -139,6 +177,6 @@
     </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js\main.js"></script>
 </body>
 </html>

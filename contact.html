@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mobiclean</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;800;900&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css\contact.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets\images\logo.png" alt="Mobiclean Logo">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#diensten">Diensten</a>
+            <a href="gallery.html">Galerij</a>
+            <a href="contact.html" class="btn-red-small">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <canvas id="contactParticles"></canvas>
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Neem <span class="text-red">Contact</span> Op</h1>
+                <p>Wij staan klaar om uw vragen te beantwoorden</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="methods-grid">
+                <div class="method-card reveal" style="animation-delay: 0.1s">
+                    <div class="method-icon-wrapper">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Direct en snel antwoord</p>
+                    <a href="https://wa.me/32473256614" class="method-link" target="_blank">
+                        Start chat <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="method-card reveal" style="animation-delay: 0.2s">
+                    <div class="method-icon-wrapper">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefoon</h3>
+                    <p>Bel ons direct</p>
+                    <a href="tel:+32473256614" class="method-link">
+                        0473 25 66 14 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="method-card reveal" style="animation-delay: 0.3s">
+                    <div class="method-icon-wrapper">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>Gebruik het formulier hieronder</p>
+                    <a href="#contact-form" class="method-link">
+                        Verstuur bericht <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header reveal">
+                    <h2>Verstuur uw <span class="text-red">bericht</span></h2>
+                    <p>Vul het formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+                </div>
+
+                <form id="contactForm" class="contact-form reveal">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Naam *
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Uw volledige naam">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> E-mail *
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="uw.email@voorbeeld.be">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Telefoon
+                            </label>
+                            <input type="tel" id="phone" name="phone" placeholder="0473 25 66 14">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicle">
+                                <i class="fas fa-car"></i> Voertuig type
+                            </label>
+                            <select id="vehicle" name="vehicle">
+                                <option value="">Selecteer type</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="stationwagen">Stationwagen</option>
+                                <option value="bestelwagen">Bestelwagen</option>
+                                <option value="sport">Sportwagen</option>
+                                <option value="anders">Anders</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">
+                            <i class="fas fa-sparkles"></i> Gewenste dienst
+                        </label>
+                        <select id="service" name="service">
+                            <option value="">Selecteer dienst</option>
+                            <option value="interieur">Interieur Detail</option>
+                            <option value="exterieur">Exterieur Detail</option>
+                            <option value="volledig">Volledig Detail Pakket</option>
+                            <option value="polijsten">Polijsten & Lakcorrectie</option>
+                            <option value="bescherming">Keramische Bescherming</option>
+                            <option value="anders">Anders / Advies nodig</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment-dots"></i> Bericht *
+                        </label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Beschrijf uw wensen of stel uw vraag..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span>Ik ga akkoord met de <a href="privacy.html" target="privacy.html">privacyverklaring</a> *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-text">Verstuur bericht</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+
+            <!-- Contact Info Sidebar -->
+            <div class="contact-info reveal">
+                <div class="info-card">
+                    <div class="info-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Mobiele Service</h3>
+                    </div>
+                    <p>Wij komen naar u toe! Service op uw locatie in Antwerpen en omgeving.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-header">
+                        <i class="fas fa-clock"></i>
+                        <h3>Bereikbaar</h3>
+                    </div>
+                    <ul class="hours-list">
+                        <li><span>Ma - Vr:</span> <strong>08:00 - 18:00</strong></li>
+                        
+                    </ul>
+                </div>
+
+               
+
+                <!-- <div class="social-connect">
+                    <h4>Volg ons</h4>
+                    <div class="social-buttons">
+                        <a href="#" target="_blank" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+   <!-- <section class="map-section">
+        <div class="container">
+            <div class="map-info reveal">
+                <h3>Werkgebied</h3>
+                <p>Wij bedienen Antwerpen en omliggende regio's binnen een straal van 30km.</p>
+            </div>
+        </div>
+    </section> -->
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-section">
+            <h4>Het bedrijf</h4>
+            <ul>
+                <li><a href="index.html#home">Over ons</a></li>
+                <li><a href="index.html#diensten">Diensten</a></li>
+                <li><a href="gallery.html">Galerij</a></li>
+            </ul>
+        </div>
+        <!--  <h4>Contact</h4>
+            <p>Wouter Dure<br>0473 25 66 14</p> -->
+        <div class="footer-bottom">
+            <p><a href="#">Algemene voorwaarden</a></p>
+            <p>&copy; 2026 By Mobiclean</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js\contact.js"></script>
+</body>
+</html>
